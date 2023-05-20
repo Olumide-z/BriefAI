@@ -1,3 +1,5 @@
+import Content from "@/components/Content"
+import HeroSection from "@/components/HeroSection"
 import Navbar from "@/components/Navbar"
 import Head from "next/head"
 import React, {useEffect, useState} from 'react'
@@ -29,8 +31,9 @@ export default function Home() {
         <meta property="og:title" content="My new title" key="title" />
       </Head>
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode}/>
-      <div className={`${darkMode === true ? 'dark' : 'light'} backGround h-screen padding pt-20`}>
-        hello
+      <div className={`${darkMode === true ? 'dark' : 'light'} backGround min-h-screen padding pt-20`}>
+        <HeroSection />
+        <Content />
       </div>
     </>
   )

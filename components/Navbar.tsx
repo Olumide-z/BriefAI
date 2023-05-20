@@ -13,7 +13,7 @@ const Navbar = ({ darkMode, setDarkMode} : IProps) => {
 
    
     return (
-    <div className="padding nav">
+    <div className="padding nav z-20">
         <h1 className='text-2xl font-bold'>BriefAI</h1>
         <p onClick={switchMode} className='cursor-pointer text-2xl'>
             {darkMode === true ? <MdLightMode /> : <MdDarkMode />}

@@ -16,6 +16,9 @@ module.exports = {
       lg: '976px',
       xl: '1440px',
     },
+    // fontFamily:{
+    //   'sans': ['Ubuntu', 'sans-serif']
+    // },
     extend: {},
   },
   plugins: [],
