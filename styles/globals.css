@@ -44,7 +44,7 @@ html{
   }
 
   .mode{
-    @apply absolute top-20 right-5 w-[150px] bg-white dark:bg-slate-800 py-[0.2rem] border-gray-400 shadow-lg rounded-lg text-black dark:text-white
+    @apply fixed z-50 top-20 right-5 w-[150px] bg-white dark:bg-slate-800 py-[0.2rem] border-gray-400 shadow-lg rounded-lg text-black dark:text-white
   }
 
   .theme{
