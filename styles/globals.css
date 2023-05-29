@@ -4,6 +4,7 @@
 
 /* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Mogra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
 
 *{
   margin: 0;
@@ -11,11 +12,11 @@
   box-sizing: border-box;
 }
 
+html{
+  font-family: 'Nunito', sans-serif;
+}
 
 @layer base {
-  html{
-    font-family: 'Mogra', cursive;
-  }
 
   .backGround {
     @apply bg-white dark:bg-slate-900 text-black dark:text-white;
@@ -41,4 +42,13 @@
   .copy{
     @apply flex items-center gap-2
   }
+
+  .mode{
+    @apply absolute top-20 right-5 w-[150px] bg-white dark:bg-slate-800 py-[0.2rem] border-gray-400 shadow-lg rounded-lg text-black dark:text-white
+  }
+
+  .theme{
+    @apply flex items-center gap-2 p-2 cursor-pointer hover:bg-slate-100 hover:dark:bg-slate-900 text-sm
+  }
+
 }

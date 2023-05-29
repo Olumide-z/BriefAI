@@ -116,15 +116,17 @@ const Content = () => {
         : error ? <p>Something went wrong...</p>
         : (
           article?.summary && (
-            <div className='summary-box bg-white dark:bg-slate-700 p-4 w-full lg:w-[80%]'>
+            <div className='summary-box bg-white dark:bg-slate-700 p-4 w-full lg:w-[80vw] md:w-[90vw] sm:w-full'>
               <div className='flex justify-between items-center mb-8'>
-                <h1 className='font-bold text-xl'><span>Article</span> Summary</h1>
+                <h1 className='text-base md:text-2xl'>
+                  <span className='font-bold'>Article</span> <span className='font-extralight'>Summary</span>
+                </h1>
                 <span className='font-bold text-xl cursor-pointer' onClick={() => handleCopy(article.summary)}>
                   {copy ? <p className='copy'><BsCheckLg /><span className='text-sm'>Copied</span></p> 
                         : <p className='copy'><AiOutlineCopy /><span className='text-sm'>Copy</span></p> }
                 </span>
               </div>
-              {text}
+              <p className='text-base'>{text}</p>
             </div>
         ))}
        
